@@ -40,15 +40,15 @@
         </nav>
     </header>
 
-    <main class="container">
-        <div class="row">
-            <div class="col-12">
+    <main class="container py-3">
+        <div class="row g-3">
+            <div class="col-12 col-md-2">
                 <!-- email buttons -->
-                <button class="btn btn-lg btn-outline-primary w-100 my-3"><i class="bi bi-pencil-square"></i> New
+                <button class="btn btn-lg btn-outline-primary w-100 mb-3" data-bs-toggle="modal"
+                    data-bs-target="#newEmailModal"><i class="bi bi-pencil-square"></i> New
                     Email</button>
-            </div>
-            <div class="col-12">
-                <div class="btn-group" role="group" aria-label="button group">
+                <!-- horizontal button group for mobileview -->
+                <div class="btn-group d-md-none w-100" role="group" aria-label="button group">
                     <button type="button" class="btn btn-lg btn-primary">
                         <i class="bi bi-mailbox"></i>
                         Inbox
@@ -70,6 +70,76 @@
                         Spam
                     </button>
                 </div>
+                <!-- vertical btn group for desktop -->
+                <div class="btn-group-vertical d-none d-md-block w-100" role="group" aria-label="button group">
+                    <button type="button" class="btn btn-lg btn-primary">
+                        <i class="bi bi-mailbox"></i>
+                        Inbox
+                    </button>
+                    <button type="button" class="btn btn-lg btn-info">
+                        <i class="bi bi-envelope-heart"></i>
+                        Drafts
+                    </button>
+                    <button type="button" class="btn btn-lg btn-success">
+                        <i class="bi bi-send-check"></i>
+                        Sent
+                    </button>
+                    <button type="button" class="btn btn-lg btn-danger">
+                        <i class="bi bi-trash"></i>
+                        Trash
+                    </button>
+                    <button type="button" class="btn btn-lg btn-warning">
+                        <i class="bi bi-exclamation-octagon"></i>
+                        Spam
+                    </button>
+                </div>
+            </div>
+            <div class="col-12 col-md-10 border rounded-3 p-3">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#emailModal">
+                        <strong>Dane Whitman</strong> - Some Email Subject
+                        <p class="text-secondary ms-5 mb-0">
+                            The rest of the email content...
+                        </p>
+                    </li>
+                    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#emailModal">
+                        <strong>Dane Whitman</strong> - Some Email Subject
+                        <p class="text-secondary ms-5 mb-0">
+                            The rest of the email content...
+                        </p>
+                    </li>
+                    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#emailModal">
+                        <strong>Dane Whitman</strong> - Some Email Subject
+                        <p class="text-secondary ms-5 mb-0">
+                            The rest of the email content...
+                        </p>
+                    </li>
+                    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#emailModal">
+                        <strong>Dane Whitman</strong> - Some Email Subject
+                        <p class="text-secondary ms-5 mb-0">
+                            The rest of the email content...
+                        </p>
+                    </li>
+                    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#emailModal">
+                        <strong>Dane Whitman</strong> - Some Email Subject
+                        <p class="text-secondary ms-5 mb-0">
+                            The rest of the email content...
+                        </p>
+                    </li>
+                    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#emailModal">
+                        <strong>Dane Whitman</strong> - Some Email Subject
+                        <p class="text-secondary ms-5 mb-0">
+                            The rest of the email content...
+                        </p>
+                    </li>
+                    <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#emailModal">
+                        <strong>Dane Whitman</strong> - Some Email Subject
+                        <p class="text-secondary ms-5 mb-0">
+                            The rest of the email content...
+                        </p>
+                    </li>
+
+                </ul>
                 <!-- email messages -->
             </div>
         </div>
@@ -88,6 +158,72 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- Modal for email -->
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centerd">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">To: Dane Whitman</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="lead"><strong>Subject : Some Email Subject </strong></h5>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, molestias maxime id ipsa suscipit
+                    deleniti eaque odio? Qui necessitatibus reiciendis esse. Voluptatum tempore dolore eaque accusamus
+                    molestias expedita maiores aut!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#newEmailModal">Reply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for New Email -->
+
+    <div class="modal fade" id="newEmailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="#">
+                    <div class="modal-header">
+
+                        <div class="modal-title fs-5 d-flex w-100" id="staticBackdropLabel">
+
+                            <label class="form-label" for="NewEmail">To: </label>
+
+                            <input aria-label="NewEmail" class="form-control mx-3" name="Email" type="email" />
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label class="form-label" for="Subject">Subject:</label>
+                        <input aria-label="Subject" class="form-control" name="Subject" type="text" />
+
+                        <label class="form-label my-2" for="Message">Message: </label>
+                        <textarea aria-label="Message" class="form-control" name="Message" type="text" rows="4"
+                            placeholder="Enter your message here..."></textarea>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary">Save as Draft</button>
+                        <button type="button" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
