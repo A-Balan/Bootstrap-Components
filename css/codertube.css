@@ -1,0 +1,27 @@
+.line-clamp {
+    display: webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+}
+
+.sticky-sidebar {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.nav-link {
+    padding: 8px;
+}
+
+.nav-link:hover {
+    border-radius: 8px;
+    background-color: rgb(98, 94, 94);
+    color: white;
+}
