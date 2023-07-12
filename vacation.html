@@ -39,7 +39,7 @@
             </div>
         </nav>
     </header>
-    <main class="container my-3">
+    <main class="container-fluid my-3">
         <h1 class="display-4 text-center mb-3">Vacation Packages</h1>
 
         <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
@@ -152,15 +152,50 @@
             </div>
         </div>
 <!-- contact form -->
-        <div class="text-center mt-5">
+        <div class="text-center mt-5 container">
             <button class="bg-transparent border-0 display-6" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              Contact us
+                <i class="bi bi-chevron-down"></i> Contact us
             </button>
           
           <div class="collapse mt-3" id="collapseExample">
             <div class="card card-body">
-              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-            </div>
+                <form action="#">
+                    <div class="row row-cols-1">
+                        <div class="col col-md-6">
+                            <label for="FirstName" class="form-label">First Name</label>
+                            <input aria-label="First Name" class="form-control" name="FirstName" id="FirstName"
+                                type="text" placeholder="First Name" required />
+                        </div>
+                        <div class="col col-md-6">
+                            <label for="LastName" class="form-label">Last Name</label>
+                            <input aria-label="Last Name" class="form-control" name="LastName" id="LastName" type="text"
+                                placeholder="Last Name" required />
+                        </div>
+                        <div class="col col-md-6">
+                            <label for="Email" class="form-label">Email</label>
+                            <input aria-label="Email" class="form-control" name="Email" id="Email" type="email"
+                                placeholder="email" required />
+                        </div>
+                        <div class="col col-md-6">
+                            <label for="Phone" class="form-label">Phone</label>
+                            <input aria-label="Phone" class="form-control" name="Phone" id="Phone" type="tel"
+                                placeholder="Phone" />
+                        </div>
+                        <div class="col text-start mt-2">
+                            <label for="Subject" class="form-label">Subject</label>
+                            <input aria-label="Subject" class="form-control" name="Subject" id="Subject" type="text"
+                                placeholder="Subject" required />
+                        </div>
+                        <div class="col text-start mt-2">
+                            <label for="Message" class="form-label">Message</label>
+                            <textarea aria-label="Message" class="form-control" name="Message" id="Message" type="tel"
+                                placeholder="Message" rows="4"></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                        </div>
+                    </div>
+                </form>
           </div>
         </div>
     </main>

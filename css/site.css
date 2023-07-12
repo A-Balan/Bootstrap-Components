@@ -13,6 +13,16 @@ main {
     flex-grow: 1;
 }
 
+.nav-link {
+    padding: 8px;
+}
+
+.nav-link:hover {
+    border-radius: 8px;
+    background-color: rgb(98, 94, 94);
+    color: white;
+}
+
 footer {
     flex-shrink: 0;
 }
